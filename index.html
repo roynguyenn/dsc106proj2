@@ -138,6 +138,11 @@
           }
         }
       }
+          /* Resize images */
+      figure img {
+        max-width: 60%;
+        height: auto;
+      }
     </style>
   </head>
 
@@ -148,26 +153,26 @@
         Persuasive or Deceptive Visualization?
       </h1>
 
-      <p><strong>Your Name</strong> — <em>Your UCSD Email Address</em></p>
+      <p><strong>Royce Nguyen</strong> — <em>ron005@ucsd.edu</em></p>
     </header>
 
     <main>
-      <h2>Proposition: [STATE PROPOSITION]</h2>
+      <h2>Proposition: After the NYPD’s body-camera pilot program rollout in 2014, male police officers received a higher number of substantiated civilian complaints compared to their female counterparts.</h2>
 
       <section>
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="male_officers.png" alt="Cumulative substantiated complaints for male officers" />
+          <figcaption>New substantiated complaints for male officers since 2014.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>1.5, Baseline of counts starts at 2014 to emphasize the change after body-cam rollouts. It faithfully shows the trend of counts after 2014.</li>
+          <li>1.5, Added red vertical line at 2019 to highlight the difference at the latest year. It just shows the difference between the 2019 year.</li>
+          <li>-0.5, Annotated the height of female and male officer counts that emphasizes its difference. It contains some language that has bias in it to sway the reader's mind.</li>
         </ul>
       </section>
 
@@ -175,23 +180,25 @@
         <h3>AGAINST the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="female_officers.png" alt="Cumulative substantiated complaints for female officers" />
+          <figcaption>New substantiated complaints for female officers since 2014.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>-1.5, Decided to use substantiation rate. This is pretty deceptive since there's a large difference between female and male officers to begin with and having less data points leads to more variation.</li>
+          <li>1, Reducing the opacity of the pre-2014 bars. It deceives the reader by diverting their attention to the post 2014 rates.</li>
+          <li>-1.5, Deciding to group on pre and post 2014. There are way less female officer data than there is male, and grouping post 2014 would further limit the amount of female officer data that got transformed.</li>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
 
-        <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+        <p>Throughout designing my graphs, the most straightforward thing was creating a time-series plot where we counted the number of substantiated complaints against male and female officers. I was able to clearly show a trend that differentiates male and female gender officers, because the data already had that trend in place. However, the most most difficult part was showing an opposite trend. I had to brainstorm a lot and come up with different metrics that would persuade the reader of the opposite trend. Here, I ultimately choose to work with substantiation rate which may seem earnest at first, but behind the scenes, the reason why it showed the opposite trend for substantiaton rate was because of the lack of female officer data so the rates/proportions get more increased. 
+          
+        This leads into how I define ethical analysis and visualization. First and foremost, I believe if we are creating a visualization, there should be enough datapoints to support what the takeaway of the visualization should be. Although "enough" might be subjective, I would say around 100 or more observations would be sufficient in most contexts.   </p>
       </section>
     </main>
   </body>
