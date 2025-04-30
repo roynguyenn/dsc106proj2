@@ -170,9 +170,9 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>1.5, Baseline of counts starts at 2014 to emphasize the change after body-cam rollouts. It faithfully shows the trend of counts after 2014.</li>
-          <li>1.5, Added red vertical line at 2019 to highlight the difference at the latest year. It just shows the difference between the 2019 year.</li>
-          <li>-0.5, Annotated the height of female and male officer counts that emphasizes its difference. It contains some language that has bias in it to sway the reader's mind.</li>
+          <li>1.5, Baseline of counts starts at 2014 to emphasize the change after body-cam rollouts. It faithfully shows the trend of counts after 2014. I considered other alternatives of metrics such as cumulative sum, however I didn't want to use log so I settled on counts after the additive count after 2014.  </li>
+          <li>1.5, Added red vertical line at 2019 to highlight the difference at the latest year. It just shows the difference between the 2019 year. It just adds more clarity to the difference and emphasis that amount.</li>
+          <li>-0.5, Annotated the height of female and male officer counts that emphasizes its difference. It contains some language that has bias in it to sway the reader's mind. Helped make my visualization more persuasive because it allowed </li>
         </ul>
       </section>
 
@@ -187,9 +187,9 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>-1.5, Decided to use substantiation rate. This is pretty deceptive since there's a large difference between female and male officers to begin with and having less data points leads to more variation.</li>
-          <li>1, Reducing the opacity of the pre-2014 bars. It deceives the reader by diverting their attention to the post 2014 rates.</li>
-          <li>-1.5, Deciding to group on pre and post 2014. There are way less female officer data than there is male, and grouping post 2014 would further limit the amount of female officer data that got transformed.</li>
+          <li>-1.5, Decided to use substantiation rate. This is pretty deceptive since there's a large difference between female and male officers to begin with and having less data points leads to more variation. It helped my visualization be more persuasive because using this metric, I'm able to show the opposing trend.</li>
+          <li>1, Reducing the opacity of the pre-2014 bars. It deceives the reader by diverting their attention to the post 2014 rates. It's pretty earnest, there isn't any tricks I'm doing here and it is just to emphasize the other bar that does show the trend.</li>
+          <li>-1.5, Deciding to group on pre and post 2014. There are way less female officer data than there is male, and grouping post 2014 would further limit the amount of female officer data that got transformed. Which also leads to a pretty deceptive trend that gets outlined. This really ties with using substantiation rate as well.</li>
         </ul>
       </section>
 
